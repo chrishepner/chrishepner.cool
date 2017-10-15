@@ -1,3 +1,81 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "http://www.chrishepner.info"
+title = "Chris Hepner"
+# for smart copyright line, leave this blank and check [params.copyright]
+copyright = ""
+
+theme = "minimo"
+
+disqusShortname = ""
+googleAnalytics = ""
+
+Paginate = 5
+preserveTaxonomyNames = true
+
+# Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
+pygmentsCodefences = true
+
+[params.info]
+description = "Web development & software"
+title404 = "Nothing's here!"
+
+[params.assets]
+favicon = "favicon.ico"
+customCSS = ["css/custom.css"]
+customJS = ["js/custom.js"]
+gopher = "" # used in 404 template ( Generator: https://gopherize.me )
+
+[params.copyright]
+prefix = ""
+holder = "Chris Hepner"
+startYear = "2014"
+suffix = ""
+
+[params.settings]
+# date & time format: https://golang.org/pkg/time/
+dateFormat = "Jan 2 2006"
+hideEntryNavigation = false
+hideSocialMenu = false
+showReadingTime = true
+
+[params.opengraph.facebook]
+admins = [] # array of Facebook IDs
+appID = ""
+pageID = ""
+
+[params.seo]
+# Title Separator: - – — · • * ⋆ | ~ « » < >
+titleSeparator = "•"
+
+[params.social]
+email = "me@chrishepner.cool"
+github = "chrishepner"
+#instagram = "MunifTanjim"
+#twitter = "MunifTanjim"
+linkedin = "chrishepner"
+
+[taxonomies]
+author = "authors"
+category = "categories"
+tag = "tags"
+
+[permalinks]
+page = "/:slug/"
+
+# [[menu.main]]
+# name = "Repo"
+# weight = -10
+# identifier = "repository"
+# url = "https://github.com/chrishepner/chrishepner.github.io"
+
+[blackfriday]
+hrefTargetBlank = true
+
+# Language Configuration
+defaultContentLanguage = "en"
+
+[languages]
+# edit this block for your own language
+[languages.en]
+lang = "en"
+languageName = "English"
+weight = 1
